@@ -33,7 +33,7 @@ export function* rootSaga() {
   ].map(fork));
 }
 
-//const host = 'http://localhost:3030';
+// const host = 'http://localhost:3030';
 const host = 'https://greensprings-quizzer-server.herokuapp.com/';
 export const app = feathers()
   .configure(rest(host).superagent(superagent))
